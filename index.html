@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Applicant Details</title>
+</head>
+<body>
+
+  <center>
+<img src="./50906.jpg" width="80"><br>
+<h2>TG STATE ROAD TRANSPORT CORPORATION</h2>
+<h3>GENERAL BUS PASS APPLICATION</h3>
+</center>
+
+<form>
+  <fieldset colspan="2">
+    <legend >Applicant Details</legend>
+
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" />
+    <small>(Maximum characters: 20)</small>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="guardian">Father's / Guardian's Name *</label>
+    <input type="text" id="guardian" name="guardian_name" />
+    <br /><br />
+
+    <label for="dob">Date of birth * (dd/mm/yyyy)</label>
+    <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>Gender *</label>
+    <label><input type="radio" name="gender" value="female" /> Female</label>
+    <label><input type="radio" name="gender" value="male" /> Male</label>
+    <br /><br />
+
+    <label>Age As on :</label>
+    <input type="number" name="age_years" />
+    <label>Year(s)</label>
+    <input type="number" name="age_months" />
+    <label>Month(s)</label>
+    <input type="number" name="age_days"  />
+    <label>Day(s)</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="aadhaar">Aadhaar No:</label>
+    <input type="text" id="aadhaar" name="aadhaar" />
+    <br /><br />
+
+    <label for="whatsapp">WhatsApp No *</label>
+    <input type="tel" id="whatsapp" name="whatsapp"  />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="email">E-mail Id *</label>
+    <input type="email" id="email" name="email"  />
+    <br /><br />
+
+    <label for="photo">Photo *</label>
+    <input type="file" id="photo" name="photo"  />
+    <br /><br />
+
+  </fieldset>
+<!--                           one  -->
+  <fieldset>
+    <legend>Residential Address Details</legend>
+
+    <label for="address">Applicant's Address *</label>
+    <br />
+    <textarea id="address" name="address" maxlength="20" rows="4" cols="25" required></textarea>
+    <br />
+    <small>(Maximum characters: 20)</small>
+    <br />
+    <small>You have </small>
+    <input type="number" id="chars_left" name="chars_left" value="20" size="3" readonly />
+    <small> characters left.</small>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="district">District *</label>
+    <select id="district" name="district" >
+      <option value="HYDERABAD">HYDERABAD</option>
+      <option value="WARANGAL">WARANGAL</option>
+      <option value="KARIMNAGAR">KARIMNAGAR</option>
+      <option value="NIZAMABAD">NIZAMABAD</option>
+      <option value="KHAMMAM">KHAMMAM</option>
+    </select>
+    <br /><br />
+
+    <label for="mandal">Mandal *</label>
+    <select id="mandal" name="mandal" >
+      <option value="HYDERABAD">HYDERABAD</option>
+      <option value="SECUNDERABAD">SECUNDERABAD</option>
+      <option value="KUKATPALLY">KUKATPALLY</option>
+      <option value="LB NAGAR">LB NAGAR</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="village">Village *</label>
+    <select id="village" name="village" >
+      <option value="HYDERABAD">HYDERABAD</option>
+      <option value="BEGUMPET">BEGUMPET</option>
+      <option value="AMEERPET">AMEERPET</option>
+      <option value="DILSUKHNAGAR">DILSUKHNAGAR</option>
+    </select>
+    <br /><br />
+
+    <label for="pincode">Pincode *</label>
+    <input type="text" id="pincode" name="pincode" maxlength="6" size="20" required />
+    <br /><br />
+
+    </fieldset>
+
+
+    <fieldset>
+    <legend>Pass Type Details</legend>
+
+    <label for="city">City *</label>
+    <br />
+    <select id="city" name="city" required>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Warangal">Warangal</option>
+      <option value="Karimnagar">Karimnagar</option>
+      <option value="Nizamabad">Nizamabad</option>
+      <option value="Khammam">Khammam</option>
+    </select>
+    <br /><br />
+
+    <label for="pass_type">Pass Type *</label>
+    <br />
+    <select id="pass_type" name="pass_type" >
+      <option value="">-----Select-----</option>
+      <option value="monthly">Monthly Pass</option>
+      <option value="quarterly">Quarterly Pass</option>
+      <option value="yearly">Yearly Pass</option>
+      <option value="student">Student Pass</option>
+      <option value="senior">Senior Citizen Pass</option>
+    </select>
+    <br /><br />
+    </fieldset>
+
+     <fieldset>
+    <legend>Mode of Payment &amp; Pass Collection</legend>
+
+    <label for="payment_mode">Payment Mode *</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="payment_mode" name="payment_mode" >
+      <option value="">Select Payment Mode</option>
+      <option value="online">Online</option>
+      <option value="cash">Cash</option>
+      <option value="upi">UPI</option>
+      <option value="card">Card</option>
+    </select>
+    <br /><br />
+
+    <label for="pass_delivery">Pass Delivery Mode *</label>
+    &nbsp;
+    <select id="pass_delivery" name="pass_delivery" >
+      <option value="">Select Pass Delivery Mode</option>
+      <option value="home_delivery">Home Delivery</option>
+      <option value="center_collection">Center Collection</option>
+      <option value="post">Post</option>
+    </select>
+    <br /><br />
+
+    <label for="center">Center at which you want to Collect Pass *</label>
+    <br />
+    <select id="center" name="center" size="1" required>
+      <option value="">-----Select-----</option>
+      <option value="center1">Center 1 - Hyderabad</option>
+      <option value="center2">Center 2 - Secunderabad</option>
+      <option value="center3">Center 3 - Kukatpally</option>
+    </select>
+    <br /><br />
+
+    </fieldset>
+
+    <!-- Captcha -->
+     <br>
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOiH7oFJpOHuO2ZY6jHdoZiTiITmMifz7mKg&s" width ="120" height = "40">
+&nbsp;&nbsp;
+
+<a href="">
+<button type="button">Refresh</button>
+</a>
+
+<br><br>
+
+<input type="text" size="20" placeholder="Enter Captcha">
+
+<br><br>
+
+<input type="submit" value="Submit">
+</center>
+
+</form>
+
+</form>
+
+</body>
+</html>
